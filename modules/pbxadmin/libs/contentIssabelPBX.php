@@ -45,7 +45,8 @@ function getContent(&$smarty, $iss_module_name, $withList)
                             "pt" => "pt_PT", "ru" => "ru_RU", "sv" => "sv_SE", "br" => "pt_BR");
 
     $langIssabelPBX = isset($arrLangIssabelPBX[$lang])?$arrLangIssabelPBX[$lang]:"en_US";
-    setcookie("lang",$langIssabelPBX,0);
+    $langIssabelPBXSPL = htmlspecialchars($langIssabelPBX);
+    setcookie("lang",$langIssabelPBXSPL,0);
     $local_templates_dir = "$base_dir/modules/$iss_module_name/themes/default";
 
     //set variables
