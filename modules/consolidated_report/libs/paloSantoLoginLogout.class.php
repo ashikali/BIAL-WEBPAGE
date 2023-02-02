@@ -93,6 +93,11 @@ class paloSantoLoginLogout {
 	$record = $this->_DB->getFirstRowQuery($sql);
 	$recordset[] = Array("Average Call Duration",$record[0]);
 
+        $sql = "SELECT SUBSTRING(SEC_TO_TIME(MAX(duration)),1,8) FROM call_entry
+                WHERE status='terminada' AND datetime_entry_queue  BETWEEN '{$sFechaInicio}' AND '{$sFechaFin}'";
+        $record = $this->_DB->getFirstRowQuery($sql);
+        $recordset[] = Array("Maximum Call Duration",$record[0]);
+ 
 	return $recordset;
 
     }

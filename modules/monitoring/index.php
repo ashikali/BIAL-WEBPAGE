@@ -187,7 +187,7 @@ function reportMonitoring($smarty, $module_name, $local_templates_dir, &$pDB, $p
     $url = array_merge($url, $paramFilter);
 
     $arrData = null;
-    $arrColumns = array(_tr("UniqueID"), _tr("Date"), _tr("Time"), _tr("Source"),
+    $arrColumns = array(_tr("UniqueID"), _tr("Date"), _tr("Time"),_tr("Cnam"), _tr("Source"),
             _tr("Destination"),_tr("Duration"),_tr("Type"),_tr("Message"));
 
     // Se asume que sólo el administrador puede consultar con extension NULL
@@ -319,6 +319,7 @@ function formatCallRecordingTuple($value)
     return array(
         date('d/m/Y',strtotime($value['calldate'])),
         date('H:i:s',strtotime($value['calldate'])),
+	$value['cnam'],
         $final_src,
         isset($value['dst']) ? $value['dst'] : '',
         SecToHHMMSS($value['duration']),
