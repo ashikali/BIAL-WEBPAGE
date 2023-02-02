@@ -1,4 +1,5 @@
 outputhash = null;
+const sanitizer = new Sanitizer();  // Default sanitizer;
 
 $(document).ready(function() {
 	var jobid = $("#jobid").val();
@@ -29,7 +30,10 @@ function checkFaxStatus(jobid)
 	        		$("#statusFax").html('');
 	        	} else if (respuesta.message.faxstatus.state == 'F') {
 	        		// Fax ha fallado luego de los reintentos
-	        		$("#statusFax").html(respuesta.message.faxstatus.status);
+				// Sanitize response the text.
+				var sanitizedStatus = sanitizer.sanitize(respuesta.message.faxstatus.status);
+	        		//$("#statusFax").html(respuesta.message.faxstatus.status);
+				$("#statusFax").html(sanitizedStatus);
 	        	} else {
 	        		// Fax en progreso
 	        		$("#statusFax").html(respuesta.message.faxstatus.modemstatus + ' - [' 
