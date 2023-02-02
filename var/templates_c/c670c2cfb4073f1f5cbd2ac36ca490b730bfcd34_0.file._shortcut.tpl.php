@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2023-01-06 16:32:27
+/* Smarty version 3.1.47, created on 2023-01-24 14:05:29
   from '/replica/var_www/html/themes/tenant/_common/_shortcut.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '3.1.33',
-  'unifunc' => 'content_63b7ffc36015a5_48263624',
+  'version' => '3.1.47',
+  'unifunc' => 'content_63cf9851c2e9d4_63964207',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c670c2cfb4073f1f5cbd2ac36ca490b730bfcd34' => 
     array (
       0 => '/replica/var_www/html/themes/tenant/_common/_shortcut.tpl',
-      1 => 1673000581,
+      1 => 1674451781,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63b7ffc36015a5_48263624 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63cf9851c2e9d4_63964207 (Smarty_Internal_Template $_smarty_tpl) {
 ?><li>
     <?php if ($_smarty_tpl->tpl_vars['SHORTCUT_BOOKMARKS']->value) {?>
         <a href="#">
@@ -32,8 +32,9 @@ function content_63b7ffc36015a5_48263624 (Smarty_Internal_Template $_smarty_tpl)
             <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['SHORTCUT_BOOKMARKS']->value, 'shortcut', false, NULL, 'shortcut', array (
 ));
-if ($_from !== null) {
-foreach ($_from as $_smarty_tpl->tpl_vars['shortcut']->value) {
+$_smarty_tpl->tpl_vars['shortcut']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['shortcut']->value) {
+$_smarty_tpl->tpl_vars['shortcut']->do_else = false;
 ?>
                 <li>
                     <a href="index.php?menu=<?php echo $_smarty_tpl->tpl_vars['shortcut']->value['namemenu'];?>
@@ -43,7 +44,6 @@ foreach ($_from as $_smarty_tpl->tpl_vars['shortcut']->value) {
                     </a>
                 </li>
             <?php
-}
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         </ul>
@@ -59,8 +59,9 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
     <ul>
         <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['SHORTCUT_HISTORY']->value, 'shortcut');
-if ($_from !== null) {
-foreach ($_from as $_smarty_tpl->tpl_vars['shortcut']->value) {
+$_smarty_tpl->tpl_vars['shortcut']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['shortcut']->value) {
+$_smarty_tpl->tpl_vars['shortcut']->do_else = false;
 ?>
             <li>
                 <a href="index.php?menu=<?php echo $_smarty_tpl->tpl_vars['shortcut']->value['namemenu'];?>
@@ -70,7 +71,6 @@ foreach ($_from as $_smarty_tpl->tpl_vars['shortcut']->value) {
                 </a>
             </li>
         <?php
-}
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
     </ul>

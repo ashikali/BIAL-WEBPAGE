@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2023-01-10 12:30:36
+/* Smarty version 3.1.47, created on 2023-01-25 10:19:16
   from '/replica/var_www/html/themes/tenant/_common/_list.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '3.1.33',
-  'unifunc' => 'content_63bd0d14cc6357_50604387',
+  'version' => '3.1.47',
+  'unifunc' => 'content_63d0b4cc11d758_61791942',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '549f52143aaa3a664fa7675a3f5dbaac923bb62e' => 
     array (
       0 => '/replica/var_www/html/themes/tenant/_common/_list.tpl',
-      1 => 1664271816,
+      1 => 1674451781,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63bd0d14cc6357_50604387 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63d0b4cc11d758_61791942 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/usr/share/php/Smarty/plugins/function.html_options.php','function'=>'smarty_function_html_options',),));
 ?>
 <form class="issabel-standard-formgrid" id="idformgrid" method="POST" style="margin-bottom:0;" action="<?php echo $_smarty_tpl->tpl_vars['url']->value;?>
@@ -30,8 +30,9 @@ $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/usr/share/php/Smarty/plugin
         <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['arrActions']->value, 'accion', false, 'k', 'actions', array (
 ));
-if ($_from !== null) {
-foreach ($_from as $_smarty_tpl->tpl_vars['k']->value => $_smarty_tpl->tpl_vars['accion']->value) {
+$_smarty_tpl->tpl_vars['accion']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['k']->value => $_smarty_tpl->tpl_vars['accion']->value) {
+$_smarty_tpl->tpl_vars['accion']->do_else = false;
 ?>
             <?php if ($_smarty_tpl->tpl_vars['accion']->value['type'] == 'link') {?>
                 <a href="<?php echo $_smarty_tpl->tpl_vars['accion']->value['task'];?>
@@ -119,7 +120,6 @@ echo $_smarty_tpl->tpl_vars['accion']->value['alt'];?>
                 </div>
             <?php }?>
         <?php
-}
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 
@@ -223,8 +223,9 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['arrFiltersControl']->value, 'filterc', false, 'k', 'filtersctrl', array (
 ));
-if ($_from !== null) {
-foreach ($_from as $_smarty_tpl->tpl_vars['k']->value => $_smarty_tpl->tpl_vars['filterc']->value) {
+$_smarty_tpl->tpl_vars['filterc']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['k']->value => $_smarty_tpl->tpl_vars['filterc']->value) {
+$_smarty_tpl->tpl_vars['filterc']->do_else = false;
 ?>
                 <span class="neo-filter-control"><i><?php echo $_smarty_tpl->tpl_vars['filterc']->value['msg'];?>
 </i>&nbsp;
@@ -235,7 +236,6 @@ foreach ($_from as $_smarty_tpl->tpl_vars['k']->value => $_smarty_tpl->tpl_vars[
 				<?php }?>
 				</span>
             <?php
-}
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         </div>
@@ -268,8 +268,9 @@ $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->t
   'iteration' => true,
   'total' => true,
 ));
-if ($_from !== null) {
-foreach ($_from as $_smarty_tpl->tpl_vars['k']->value => $_smarty_tpl->tpl_vars['data']->value) {
+$_smarty_tpl->tpl_vars['data']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['k']->value => $_smarty_tpl->tpl_vars['data']->value) {
+$_smarty_tpl->tpl_vars['data']->do_else = false;
 $_smarty_tpl->tpl_vars['__smarty_foreach_filas']->value['iteration']++;
 $_smarty_tpl->tpl_vars['__smarty_foreach_filas']->value['last'] = $_smarty_tpl->tpl_vars['__smarty_foreach_filas']->value['iteration'] === $_smarty_tpl->tpl_vars['__smarty_foreach_filas']->value['total'];
 ?>
@@ -321,7 +322,6 @@ echo $_smarty_tpl->tpl_vars['data']->value[(isset($_smarty_tpl->tpl_vars['__smar
                     </tr>
                 <?php }?>
                 <?php
-}
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             <?php } else { ?>

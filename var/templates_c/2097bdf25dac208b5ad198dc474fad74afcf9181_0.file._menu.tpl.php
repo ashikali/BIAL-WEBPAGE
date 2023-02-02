@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2023-01-06 16:32:27
+/* Smarty version 3.1.47, created on 2023-01-24 14:05:29
   from '/replica/var_www/html/themes/tenant/_common/_menu.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '3.1.33',
-  'unifunc' => 'content_63b7ffc367ff56_43755073',
+  'version' => '3.1.47',
+  'unifunc' => 'content_63cf9851cab1c8_08754153',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2097bdf25dac208b5ad198dc474fad74afcf9181' => 
     array (
       0 => '/replica/var_www/html/themes/tenant/_common/_menu.tpl',
-      1 => 1673000581,
+      1 => 1674451781,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63b7ffc367ff56_43755073 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63cf9851cab1c8_08754153 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type='text/javascript'>
 var themeName='elastixneo'; //nombre del tema
@@ -181,8 +181,9 @@ themes/<?php echo $_smarty_tpl->tpl_vars['THEMENAME']->value;?>
         <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['arrMainMenu']->value, 'menu', false, 'idMenu', 'menuMain', array (
 ));
-if ($_from !== null) {
-foreach ($_from as $_smarty_tpl->tpl_vars['idMenu']->value => $_smarty_tpl->tpl_vars['menu']->value) {
+$_smarty_tpl->tpl_vars['menu']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['idMenu']->value => $_smarty_tpl->tpl_vars['menu']->value) {
+$_smarty_tpl->tpl_vars['menu']->do_else = false;
 ?>
             <?php if ($_smarty_tpl->tpl_vars['idMenu']->value == $_smarty_tpl->tpl_vars['idMainMenuSelected']->value) {?>
                 <li class="active opened active">
@@ -202,8 +203,9 @@ foreach ($_from as $_smarty_tpl->tpl_vars['idMenu']->value => $_smarty_tpl->tpl_
                         <!--recorremos el arreglo del menu nivel secundario-->
                         <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['menu']->value['children'], 'subMenu', false, 'idSubMenu');
-if ($_from !== null) {
-foreach ($_from as $_smarty_tpl->tpl_vars['idSubMenu']->value => $_smarty_tpl->tpl_vars['subMenu']->value) {
+$_smarty_tpl->tpl_vars['subMenu']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['idSubMenu']->value => $_smarty_tpl->tpl_vars['subMenu']->value) {
+$_smarty_tpl->tpl_vars['subMenu']->do_else = false;
 ?>
                             <?php if ($_smarty_tpl->tpl_vars['idSubMenu']->value == $_smarty_tpl->tpl_vars['idSubMenuSelected']->value) {?>
                                 <li class="active opened active">
@@ -229,8 +231,9 @@ foreach ($_from as $_smarty_tpl->tpl_vars['idSubMenu']->value => $_smarty_tpl->t
                                     <!--recorremos el arreglo del menu de tercer nivel-->
                                     <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['subMenu']->value['children'], 'subMenu2', false, 'idSubMenu2');
-if ($_from !== null) {
-foreach ($_from as $_smarty_tpl->tpl_vars['idSubMenu2']->value => $_smarty_tpl->tpl_vars['subMenu2']->value) {
+$_smarty_tpl->tpl_vars['subMenu2']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['idSubMenu2']->value => $_smarty_tpl->tpl_vars['subMenu2']->value) {
+$_smarty_tpl->tpl_vars['subMenu2']->do_else = false;
 ?>
                                         <li>
                                             <?php if ($_smarty_tpl->tpl_vars['subMenu2']->value['Type'] == "popup") {?>
@@ -250,19 +253,16 @@ foreach ($_from as $_smarty_tpl->tpl_vars['idSubMenu2']->value => $_smarty_tpl->
                                         </li>
                                     <?php
 }
-}
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                                 </ul>
                             <?php }?>
                         </li>
                         <?php
 }
-}
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                     </ul>
                 </li>
         <?php
-}
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 
@@ -354,8 +354,9 @@ $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->t
   'iteration' => true,
   'total' => true,
 ));
-if ($_from !== null) {
-foreach ($_from as $_smarty_tpl->tpl_vars['value']->value) {
+$_smarty_tpl->tpl_vars['value']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['value']->value) {
+$_smarty_tpl->tpl_vars['value']->do_else = false;
 $_smarty_tpl->tpl_vars['__smarty_foreach_menu']->value['iteration']++;
 $_smarty_tpl->tpl_vars['__smarty_foreach_menu']->value['index']++;
 $_smarty_tpl->tpl_vars['__smarty_foreach_menu']->value['first'] = !$_smarty_tpl->tpl_vars['__smarty_foreach_menu']->value['index'];
@@ -375,7 +376,6 @@ $_smarty_tpl->tpl_vars['__smarty_foreach_menu']->value['last'] = $_smarty_tpl->t
 </a></li>
         <?php }?>
    <?php
-}
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
    <li id="tenant-help">

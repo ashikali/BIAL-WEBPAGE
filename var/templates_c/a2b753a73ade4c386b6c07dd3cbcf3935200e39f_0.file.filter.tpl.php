@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2023-01-13 10:40:16
+/* Smarty version 3.1.47, created on 2023-01-25 17:22:09
   from '/var/www/html/modules/calls_detail/themes/default/filter.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '3.1.33',
-  'unifunc' => 'content_63c0e7b84da1d4_50516656',
+  'version' => '3.1.47',
+  'unifunc' => 'content_63d117e954e7e2_27137919',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a2b753a73ade4c386b6c07dd3cbcf3935200e39f' => 
     array (
       0 => '/var/www/html/modules/calls_detail/themes/default/filter.tpl',
-      1 => 1664271816,
+      1 => 1674451780,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63c0e7b84da1d4_50516656 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63d117e954e7e2_27137919 (Smarty_Internal_Template $_smarty_tpl) {
 ?><table width="99%" border="0" cellspacing="0" cellpadding="4" align="center">
     <tr class="letra12">
         <td width="10%"><?php echo $_smarty_tpl->tpl_vars['date_start']->value['LABEL'];?>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2023-01-06 16:32:30
+/* Smarty version 3.1.47, created on 2023-01-24 14:05:32
   from '/var/www/html/modules/dashboard/applets/CommunicationActivity/tpl/communication_activity.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '3.1.33',
-  'unifunc' => 'content_63b7ffc64a0112_62952341',
+  'version' => '3.1.47',
+  'unifunc' => 'content_63cf98546c5e51_76741013',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'cec06580945d9c3dc6bc30e7cdc374408b8b0843' => 
     array (
       0 => '/var/www/html/modules/dashboard/applets/CommunicationActivity/tpl/communication_activity.tpl',
-      1 => 1673000581,
+      1 => 1674451778,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63b7ffc64a0112_62952341 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63cf98546c5e51_76741013 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" media="screen" type="text/css" href="modules/<?php echo $_smarty_tpl->tpl_vars['module_name']->value;?>
 /applets/CommunicationActivity/tpl/css/styles.css" />
 <?php echo '<script'; ?>

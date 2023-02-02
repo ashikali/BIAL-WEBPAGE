@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2023-01-06 16:32:29
+/* Smarty version 3.1.47, created on 2023-01-24 14:05:31
   from '/var/www/html/modules/dashboard/applets/IssabelNetwork/tpl/issabelnetwork.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '3.1.33',
-  'unifunc' => 'content_63b7ffc5791c69_54752545',
+  'version' => '3.1.47',
+  'unifunc' => 'content_63cf98533d5549_83553142',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '497e9b1bb445b32b8795ebf6be5ad9106a83e855' => 
     array (
       0 => '/var/www/html/modules/dashboard/applets/IssabelNetwork/tpl/issabelnetwork.tpl',
-      1 => 1673000581,
+      1 => 1674451778,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63b7ffc5791c69_54752545 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63cf98533d5549_83553142 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" media="screen" type="text/css" href="modules/<?php echo $_smarty_tpl->tpl_vars['module_name']->value;?>
 /applets/IssabelNetwork/tpl/css/toastr.min.css" />
 <link rel="stylesheet" media="screen" type="text/css" href="modules/<?php echo $_smarty_tpl->tpl_vars['module_name']->value;?>

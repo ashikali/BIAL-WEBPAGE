@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2023-01-06 16:32:29
+/* Smarty version 3.1.47, created on 2023-01-24 14:05:31
   from '/var/www/html/modules/dashboard/applets/ProcessesStatus/tpl/process_status.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '3.1.33',
-  'unifunc' => 'content_63b7ffc5cd12b5_15954132',
+  'version' => '3.1.47',
+  'unifunc' => 'content_63cf9853ca09f8_91972062',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c7b2cda0b1f8981a496db71ff7844d6e2077a5bf' => 
     array (
       0 => '/var/www/html/modules/dashboard/applets/ProcessesStatus/tpl/process_status.tpl',
-      1 => 1673000581,
+      1 => 1674451778,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63b7ffc5cd12b5_15954132 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63cf9853ca09f8_91972062 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" media="screen" type="text/css" href="modules/<?php echo $_smarty_tpl->tpl_vars['module_name']->value;?>
 /applets/ProcessesStatus/tpl/css/styles.css" />
 <?php echo '<script'; ?>
@@ -46,8 +46,9 @@ function content_63b7ffc5cd12b5_15954132 (Smarty_Internal_Template $_smarty_tpl)
 </div>
 <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['services']->value, 'infoServicio', false, 'sServicio');
-if ($_from !== null) {
-foreach ($_from as $_smarty_tpl->tpl_vars['sServicio']->value => $_smarty_tpl->tpl_vars['infoServicio']->value) {
+$_smarty_tpl->tpl_vars['infoServicio']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['sServicio']->value => $_smarty_tpl->tpl_vars['infoServicio']->value) {
+$_smarty_tpl->tpl_vars['infoServicio']->do_else = false;
 ?>
 <div class="neo-applet-processes-row">
     <div class="neo-applet-processes-row-icon"><img src="modules/<?php echo $_smarty_tpl->tpl_vars['module_name']->value;?>
@@ -74,7 +75,6 @@ foreach ($_from as $_smarty_tpl->tpl_vars['sServicio']->value => $_smarty_tpl->t
     <div class="neo-applet-processes-row-status-icon"></div>
 </div>
 <?php
-}
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);
 }

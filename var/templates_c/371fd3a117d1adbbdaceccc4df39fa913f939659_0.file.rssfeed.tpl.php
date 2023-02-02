@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2023-01-06 16:32:30
+/* Smarty version 3.1.47, created on 2023-01-24 14:05:31
   from '/var/www/html/modules/dashboard/applets/News/tpl/rssfeed.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '3.1.33',
-  'unifunc' => 'content_63b7ffc6394041_62550350',
+  'version' => '3.1.47',
+  'unifunc' => 'content_63cf9853e451a3_70116195',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '371fd3a117d1adbbdaceccc4df39fa913f939659' => 
     array (
       0 => '/var/www/html/modules/dashboard/applets/News/tpl/rssfeed.tpl',
-      1 => 1673000581,
+      1 => 1674451778,
       2 => 'file',
     ),
   ),
@@ -20,13 +20,14 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63b7ffc6394041_62550350 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63cf9853e451a3_70116195 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" media="screen" type="text/css" href="modules/<?php echo $_smarty_tpl->tpl_vars['module_name']->value;?>
 /applets/News/tpl/css/styles.css" />
 <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['NEWS_LIST']->value, 'NEWS_ITEM');
-if ($_from !== null) {
-foreach ($_from as $_smarty_tpl->tpl_vars['NEWS_ITEM']->value) {
+$_smarty_tpl->tpl_vars['NEWS_ITEM']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['NEWS_ITEM']->value) {
+$_smarty_tpl->tpl_vars['NEWS_ITEM']->do_else = false;
 ?>
 <div class="neo-applet-news-row">
     <span class="neo-applet-news-row-date"><?php echo $_smarty_tpl->tpl_vars['NEWS_ITEM']->value['date_format'];?>
@@ -43,7 +44,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['NEWS_ITEM']->value) {
 </div>
 <?php
 }
-} else {
+if ($_smarty_tpl->tpl_vars['NEWS_ITEM']->do_else) {
 ?>
 <div class="neo-applet-news-row"><?php echo $_smarty_tpl->tpl_vars['NO_NEWS']->value;?>
 </div>
