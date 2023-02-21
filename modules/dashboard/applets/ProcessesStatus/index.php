@@ -233,7 +233,7 @@ class Applet_ProcessesStatus
 
         $arrSERVICES["Dialer"]["status_service"]   = $this->_existPID_ByFile("/opt/issabel/dialer/dialerd.pid","issabeldialer");
         $arrSERVICES["Dialer"]["activate"]     = $this->_isActivate("issabeldialer");
-        $arrSERVICES["Dialer"]["name_service"]     = "Issabel Call Center Service";
+        $arrSERVICES["Dialer"]["name_service"]     = "Copper Call Center Service";
 
         return $arrSERVICES;
     }

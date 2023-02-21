@@ -211,6 +211,7 @@ SQL_COND_EXTENSION;
 
     function getAudioByUniqueId($id, $namefile = NULL)
     {
+	$namefile = NULL;
         $query = 'SELECT recordingfile FROM cdr WHERE uniqueid = ?';
         $parame = array($id);
         if (!is_null($namefile)) {

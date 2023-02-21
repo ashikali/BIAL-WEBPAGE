@@ -61,7 +61,7 @@ $(document).ready(function() {
 		<div class="login-content">
 
 			<!--img src="{$WEBPATH}themes/{$THEMENAME}/images/issabel_logo_mini.png" width="200" height="62" alt="Issabel logo" /-->
-	                <img src="images/kiab-logo-dark.png" width="200" height="100" alt="Company Logo" /-->
+	                <img src="images/brandlogo.png" width="200" height="100" alt="Company Logo" /-->
  			<br/>	
 			<br/> 		
 			<p class="description"></p>

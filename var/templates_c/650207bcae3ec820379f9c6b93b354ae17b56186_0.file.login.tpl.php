@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2023-01-25 10:13:24
+/* Smarty version 3.1.47, created on 2023-02-17 12:32:42
   from '/replica/var_www/html/themes/tenant/_common/login.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_63d0b36c117df0_87973548',
+  'unifunc' => 'content_63ef2692040dc2_60826577',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '650207bcae3ec820379f9c6b93b354ae17b56186' => 
     array (
       0 => '/replica/var_www/html/themes/tenant/_common/login.tpl',
-      1 => 1674451781,
+      1 => 1676616907,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63d0b36c117df0_87973548 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63ef2692040dc2_60826577 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -116,7 +116,7 @@ themes/<?php echo $_smarty_tpl->tpl_vars['THEMENAME']->value;?>
 			<!--img src="<?php echo $_smarty_tpl->tpl_vars['WEBPATH']->value;?>
 themes/<?php echo $_smarty_tpl->tpl_vars['THEMENAME']->value;?>
 /images/issabel_logo_mini.png" width="200" height="62" alt="Issabel logo" /-->
-	                <img src="images/kiab-logo-dark.png" width="200" height="100" alt="Company Logo" /-->
+	                <img src="images/brandlogo.png" width="200" height="100" alt="Company Logo" /-->
  			<br/>	
 			<br/> 		
 			<p class="description"></p>

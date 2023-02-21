@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.47, created on 2023-01-24 14:05:29
+/* Smarty version 3.1.47, created on 2023-02-17 12:29:47
   from '/replica/var_www/html/themes/tenant/_common/_menu.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.47',
-  'unifunc' => 'content_63cf9851cab1c8_08754153',
+  'unifunc' => 'content_63ef25e3ebf241_53376405',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2097bdf25dac208b5ad198dc474fad74afcf9181' => 
     array (
       0 => '/replica/var_www/html/themes/tenant/_common/_menu.tpl',
-      1 => 1674451781,
+      1 => 1676617073,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63cf9851cab1c8_08754153 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63ef25e3ebf241_53376405 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type='text/javascript'>
 var themeName='elastixneo'; //nombre del tema
@@ -147,7 +147,7 @@ function removeNeoDisplayOnMouseOver(ref){
             <a href="index.php">
                 <img src="<?php echo $_smarty_tpl->tpl_vars['WEBPATH']->value;?>
 themes/<?php echo $_smarty_tpl->tpl_vars['THEMENAME']->value;?>
-/images/issabel_logo_mini2.png" width="252" height="90" alt="" />
+/images/brandlogo-small.png" width="150" height="50" alt="" />
             </a>
         </div>
         <!-- logo collapse icon -->
