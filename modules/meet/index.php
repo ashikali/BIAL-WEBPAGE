@@ -116,13 +116,16 @@ function _moduleContent(&$smarty, $module_name)
 }
 
 function generateRandomString($length = 10) {
+/*
     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
     $charactersLength = strlen($characters);
     $randomString = '';
     for ($i = 0; $i < $length; $i++) {
         $randomString .= $characters[rand(0, $charactersLength - 1)];
     }
-    return $randomString;
+    return $randomString; */
+    return bin2hex(openssl_random_pseudo_bytes(5)); // Generate a 10 character random string and encode it in hexadecimal format
+
 }
 
 // Procedimiento para leer el nombre del usuario a partir del ACL
