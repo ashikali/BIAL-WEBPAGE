@@ -971,8 +971,10 @@ function deleteContact($smarty, $module_name, $local_templates_dir, $pDB, $pDB_2
 
                     $arrIm = explode(".",$contactTmp['picture']);
                     $typeImage = $arrIm[count($arrIm)-1];
-                    if(is_file($ruta_destino."/{$tmpBookID}_Thumbnail.{$typeImage}"))
-                        unlink($ruta_destino."/{$tmpBookID}_Thumbnail.{$typeImage}");
+                    if(is_file($ruta_destino."/{$tmpBookID}_Thumbnail.{$typeImage}")){
+			$file = basename("{$tmpBookID}_Thumbnail.{$typeImage}");
+                        unlink($ruta_destino."/".$file);
+		    }
                 }
             }
         }
