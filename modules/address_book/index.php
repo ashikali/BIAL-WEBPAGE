@@ -963,8 +963,11 @@ function deleteContact($smarty, $module_name, $local_templates_dir, $pDB, $pDB_2
                 $result = $padress_book->deleteContact($tmpBookID, $id_user);
                 delASTDBcidname($dsn_agi_manager,$contactTmp);
                 if($contactTmp['picture']!="" && isset($contactTmp['picture'])){
-                    if(is_file($ruta_destino."/".$contactTmp['picture']))
-                        unlink($ruta_destino."/".$contactTmp['picture']);
+                    if(is_file($ruta_destino."/".$contactTmp['picture'])){
+			$file = basename($contactTmp['picture']);
+			$path = $ruta_destino."/".$file;
+                        unlink($path);
+		    }
 
                     $arrIm = explode(".",$contactTmp['picture']);
                     $typeImage = $arrIm[count($arrIm)-1];
